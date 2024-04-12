@@ -44,6 +44,6 @@ public class Main {
     }
     public static void changePerson2(Person person) {
         person.name = "Ilya";
-        person.surname = "Lagutenko";
+        person.setSurname("Lagutenko");
     }
 }

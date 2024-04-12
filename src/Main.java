@@ -23,11 +23,10 @@ public class Main {
         // метода changeValue серым цветом, показывая что в методе main она использоваться не будет.
     }
     public static void changeIntegerValue(Integer integerValue) {
-        // внутрь медота changeValue подается переменная value из метода main
-        integerValue = 22; // далее медот работает уже с собственной переменной integerValue, значение которой взято из
-        // переменной integerValue метода main. Ей присваивается значение "22", после чего метод завершается
-        // и переменная integerValue удаляется из памяти. Среда разработки выделяет внутреннюю переменную integerValue
-        // метода changeValue серым цветом, показывая что в методе main она использоваться не будет.
+        // внутрь медота changeValue подается объект integerValue класса Integer из метода main
+        integerValue = 22; // далее медот работает уже с собственным объектом integerValue, значение которого взято из
+        // объекта integerValue метода main. Ему присваивается значение "22", после чего метод завершается
+        // и объект integerValue удаляется из памяти.
     }
     public static void changeArrayValue(Integer[] arrayValue) {
         arrayValue = new Integer[]{1, 2};

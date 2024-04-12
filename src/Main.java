@@ -10,10 +10,14 @@ public class Main {
         Integer integerValue = 33;
         changeIntegerValue(integerValue);
         System.out.println(integerValue);
-        Integer[] arrayValue = {3, 4}; // в консоль выводится [3, 4]
+        // задание 3
+        Integer[] arrayValue = {3, 4};
         changeArrayValue(arrayValue);
-        System.out.println(Arrays.toString(arrayValue));
-
+        System.out.println(Arrays.toString(arrayValue)); // в консоль выводится [3, 4]
+        // задание 4
+        Integer[] valueTask4 = {3,4};
+        changeValueTask4(valueTask4);
+        System.out.println(Arrays.toString(valueTask4));
     }
     public static void changeValue(int value) {
         // внутрь медота changeValue подается переменная value из метода main
@@ -31,5 +35,8 @@ public class Main {
     public static void changeArrayValue(Integer[] arrayValue) {
         arrayValue = new Integer[]{1, 2};
         // под массив в методе выделяется новый блок памяти для локального использования
+    }
+    public static void changeValueTask4(Integer[] valueTask4) {
+        valueTask4[0] = 99;
     }
 }

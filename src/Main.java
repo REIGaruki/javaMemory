@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         // задание 1
@@ -8,6 +10,10 @@ public class Main {
         Integer integerValue = 33;
         changeIntegerValue(integerValue);
         System.out.println(integerValue);
+        Integer[] arrayValue = {3, 4}; // в консоль выводится [3, 4]
+        changeArrayValue(arrayValue);
+        System.out.println(Arrays.toString(arrayValue));
+
     }
     public static void changeValue(int value) {
         // внутрь медота changeValue подается переменная value из метода main
@@ -22,5 +28,9 @@ public class Main {
         // переменной integerValue метода main. Ей присваивается значение "22", после чего метод завершается
         // и переменная integerValue удаляется из памяти. Среда разработки выделяет внутреннюю переменную integerValue
         // метода changeValue серым цветом, показывая что в методе main она использоваться не будет.
+    }
+    public static void changeArrayValue(Integer[] arrayValue) {
+        arrayValue = new Integer[]{1, 2};
+        // под массив в методе выделяется новый блок памяти для локального использования
     }
 }

@@ -18,6 +18,13 @@ public class Main {
         Integer[] valueTask4 = {3,4};
         changeValueTask4(valueTask4);
         System.out.println(Arrays.toString(valueTask4));
+        // задание 5
+        Person person1 = new Person("Lyapis", "Trubetskoy");
+        changePerson1(person1);
+        System.out.println(person1);
+        Person person2 = new Person("Lyapis", "Trubetskoy");
+        changePerson2(person2);
+        System.out.println(person2);
     }
     public static void changeValue(int value) {
         // внутрь медота changeValue подается переменная value из метода main
@@ -38,5 +45,13 @@ public class Main {
     }
     public static void changeValueTask4(Integer[] valueTask4) {
         valueTask4[0] = 99;
+    }
+    public static void changePerson1(Person person) {
+        String name = "Ilya";
+        String surname = "Lagutenko";
+    }
+    public static void changePerson2(Person person) {
+        person.name = "Ilya";
+        person.surname = "Lagutenko";
     }
 }
